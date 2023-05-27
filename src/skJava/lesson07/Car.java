@@ -19,7 +19,7 @@ public class Car {
 	
 	public void setCar(int num, double gas) {
 		this.num = num;
-		this.gas = gas;
+		if (gas > 0) this.gas = gas;
 	}
 	//セッター	
 	public void setCar(int num) {

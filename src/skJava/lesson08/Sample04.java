@@ -13,13 +13,17 @@ public class Sample04 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		StringBuffer sb = new StringBuffer(br.readLine());
-		System.out.println("入力した文字は「" + sb.toString() + "」です。");
+		System.out.println("入力した文字は「".toString() + sb.toString() + "」です。");
 		System.out.println();
 		
 		System.out.print("追加したい文字を入力して下さい：");
 		
-		sb.append(br.readLine());
+		String str = br.readLine();
+		sb.append(str);
 		
 		System.out.println("追加後の文字は「" + sb + "」です。");
+		
+		
+		
 	}
 }
