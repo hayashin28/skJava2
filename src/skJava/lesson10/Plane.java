@@ -1,7 +1,7 @@
 package skJava.lesson10;
 
 // 飛行機クラス
-public class Plane extends Vehicle {
+public class Plane implements iVehicle {
 
 	private int flight;
 
@@ -11,9 +11,9 @@ public class Plane extends Vehicle {
 	}
 
 	@Override
-	void show() {
+	public void vShow() {
 		System.out.println("飛行機の便は" + flight + "です。");
-		System.out.println("スピードは" + speed + "です。");
+//		System.out.println("スピードは" + speed + "です。");
 	}
 
 }
